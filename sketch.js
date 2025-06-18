@@ -16,7 +16,7 @@ function preload () {
 }
 
 function setup() {
-  createCanvas(400, 400, SVG);
+  createCanvas(550, 400, SVG);
 
   //salva svg
    addDownloadButton();
@@ -33,6 +33,7 @@ function draw() {
   resetSVG(logotipo_verticale_svg);
   resetSVG(logotipo_orizzontale_svg)
   clear(); // Non cancellare!
+  background("white")
 
   // marchio generativo pezzi
   const paths = getSVGPaths(marchio_svg);
@@ -85,10 +86,3 @@ function cambiaFormato() {
 function ridisegna() {
   redraw()
 }
-
-    //   salva gif
-  // function keyPressed() {
-  // if (key === "s") {
-  // saveGif("mySketch", 4);
-  // }
-  //  }
